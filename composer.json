@@ -1,0 +1,20 @@
+{
+  "name": "leoarce/ar_app",
+  "description": "ar test",
+  "type": "project",
+  "license": "Copyright 2020 leoarce",
+  "authors": [
+    {
+      "name": "Leo Arce",
+      "email": "leo.a@htpsi.com"
+    }
+  ],
+  "require": {
+	"php-activerecord/php-activerecord": "~1.2.0",
+	"phpmailer/phpmailer": "^6.1",
+	"twbs/bootstrap": "^4.5.0",
+    "components/jquery": "^3.5",
+    "miamiruby/pr": "^1.0",
+    "twig/twig": "^1.42"
+  }
+}

@@ -1,0 +1,17 @@
+{
+    "name": "miamiruby/pr",
+    "description": "Print Array nicely",
+    "type": "library",
+    "version": "1.0",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Paul Kruger",
+            "email": "paul@miamiphp.org"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "files": [ "PR.php" ]
+    }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+	<base href="{{ baseurl }}">
+	<link rel="icon" type="image/png" href="{{ favicon_location }}">
+	<link rel="stylesheet" href="{{ bootstrap_css_location }}">
+	<link rel="stylesheet" href="./view/css/form.css">
+	<link rel="stylesheet" href="./view/css/style.css" type="text/css">
+</head>
+<body class="text-center">
+	<form class="form-signin" action="login-action.php" method="post" id="frmLogin">
+		<img class="mb-4" src="{{ favicon_location }}" alt="" width="128" height="128">
+		<h1 class="h3 mb-3 font-weight-normal">Login</h1>
+		{% if errorMessage %}
+		<div class="alert alert-danger">{{ errorMessage }}</div>
+		{% endif %}
+		{% if successMessage %}
+		<div class="alert alert-success">{{ successMessage }}</div>
+		{% endif %}
+		<label for="username" class="sr-only">Username</label><span id="user_info" class="error-info"></span>
+		<input type="text" name="user_name" id="user_name" class="form-control loginpage" placeholder="Username" required value="{{ username }}">
+		<label for="password" class="sr-only">Password</label><span id="password_info" class="error-info"></span>
+		<input type="password" name="password" id="password" class="form-control" placeholder="Password" required autocomplete="new-password" value="{{ password }}">
+		<div class="checkbox mb-3">
+			<label>
+				<input type="checkbox" value="remember-me"> Remember me
+			</label>
+		</div>
+		<input class="btn btn-lg btn-primary btn-block" type="submit" name="login" value="Login">
+		<p class="mt-5 mb-3 text-muted"><a href="register.php">register</a></p>
+	</form>
+	<script src="{{ jquery_location }}"></script>
+	<script src="{{ bootstrap_js_location }}"></script>
+	<script type="text/javascript">
+    $(document).ready(function() {
+		//do something
+	});
+	</script>
+	{% if debug_troubleshooting == "true" %}
+	<div style="position:absolute;bottom:0;left:0;">t</div>
+	{% endif %}
+</body>
+</html>

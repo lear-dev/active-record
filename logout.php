@@ -1,0 +1,20 @@
+<?php
+session_start();
+$_SESSION["user_id"] = "";
+$_SESSION["userId"] = "";
+$_SESSION['username'] = "";
+$_SESSION['displayname'] = "";
+$_SESSION['password'] = "";
+$_SESSION['emailaddress'] = "";
+$_SESSION['errorMessage'] = "";
+$_SESSION['successMessage'] = "";
+unset($_SESSION["user_id"]);
+unset($_SESSION["userId"]);
+unset($_SESSION["username"]);
+unset($_SESSION["displayname"]);
+unset($_SESSION["password"]);
+unset($_SESSION["emailaddress"]);
+unset($_SESSION["errorMessage"]);
+unset($_SESSION["successMessage"]);
+session_destroy();
+header("Location: ./");

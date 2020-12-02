@@ -1,0 +1,32 @@
+body {
+    font-family: Arial;
+    color: #333;
+}
+.hidden {
+	display: none;
+}
+.form-signin input#display_name {
+	margin-bottom: -1px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+.form-signin input#user_name.loginpage {
+	margin-bottom: -1px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+.form-signin input#user_name.registerpage {
+	margin-bottom: -1px;
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+.form-signin input[type="email"] {
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;
+}
+.error-info {
+    color: #FF0000;
+    margin-left: 10px;
+}

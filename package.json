@@ -1,0 +1,8 @@
+{
+  "requires": true,
+  "lockfileVersion": 1,
+  "dependencies": {
+    "@popperjs/core": "^2.4.4",
+    "yarn": "^1.22.4"
+  }
+}

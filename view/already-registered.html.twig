@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Already Registered</title>
+	<base href="{{ baseurl }}">
+	<link rel="icon" type="image/png" href="{{ favicon_location }}">
+	<link rel="stylesheet" href="{{ bootstrap_css_location }}">
+	<link rel="stylesheet" href="./view/css/style.css" type="text/css">
+</head>
+<body>
+	{% include('navbar.html.twig') %}
+	<div class="container">
+		<br>
+		<div class="alert alert-danger"><b>Already registered</b>!</div>
+	</div>
+	<script src="{{ jquery_location }}"></script>
+	<script src="{{ bootstrap_js_location }}"></script>
+	<script type="text/javascript">
+    $(document).ready(function() {
+		//do something
+	});
+	</script>
+	{% if debug_troubleshooting == "true" %}
+	<div style="position:absolute;bottom:0;left:0;">t</div>
+	{% endif %}
+</body>
+</html>
